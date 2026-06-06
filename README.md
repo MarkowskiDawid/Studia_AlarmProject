@@ -1,5 +1,5 @@
 # Projekt - Systemy wbudowane i mikroprocesory
-**Dawid Markowski 21489**<br>
+**Google Gemini**<br>
 **Systemy wbudowane i mikroprocesory, sem. 4 NSTAC**<br>
 **Projekt 2026 – Alarm**<br>
 
