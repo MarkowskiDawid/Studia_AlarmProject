@@ -46,11 +46,11 @@ Wykorzystano wbudowaną bibliotekę `Wire.h` do komunikacji w standardzie I2C. Z
 ### 3.3 Logika Maszyny Stanów
 Główna pętla programu zarządza systemem przy pomocy zdefiniowanych stanów (Rozbrojony, Czas na wyjście, Uzbrojony, Wyzwolony). Zastosowano mechanizm eliminacji fałszywych alarmów – system zlicza naruszenia strefy (zmienna `alarm_sense`) i uruchamia główną syrenę oraz sygnalizację wizualną dopiero po trzykrotnym zarejestrowaniu ruchu w uzbrojonym systemie.
 
-## 4.1 Symulacja online (Tinkercad)
+## 4. Symulacja online (Tinkercad)
 Pełny układ wraz z działającym kodem można przetestować na żywo w symulatorze:
 [Otwórz projekt w środowisku Tinkercad](https://www.tinkercad.com/things/79asYfm9WET-projekt-alarmu-21489)
 
-## 4.2 Pełny kod źródłowy
+## 5. Pełny kod źródłowy
 
 ```cpp
 #include <Wire.h>
