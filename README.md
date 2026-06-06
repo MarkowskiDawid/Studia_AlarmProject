@@ -38,7 +38,7 @@ Większość logiki oraz interfejs zasilana jest bezpośrednio z układu Arduino
 | **11, 12, 13** | Diody statusu głównego (Czerwona, Pomarańczowa, Niebieska) |
 
 ### 3.1 Wyświetlacz i Interfejs (LCD 16x2)
-Zaimplementowano obsługę wyświetlacza znakowego w trybie 4-bitowym bez użycia zewnętrznych bibliotek (np. LiquidCrystal). Napisano własne funkcje do inicjalizacji oraz wysyłania komend i danych (`LCD_WriteCommand4Bits`, `LCD_WriteData4Bits`). Interfejs pozwala na uzbrajanie alarmu, przeglądanie logów z czujników oraz zmianę czasu opóźnienia wyjścia.
+Zaimplementowano obsługę wyświetlacza znakowego w trybie 4-bitowym bez użycia zewnętrznych bibliotek (np. LiquidCrystal). Zastosowano własne funkcje do inicjalizacji oraz wysyłania komend i danych (`LCD_WriteCommand4Bits`, `LCD_WriteData4Bits`). Interfejs pozwala na uzbrajanie alarmu, przeglądanie logów z czujników oraz zmianę czasu opóźnienia wyjścia.
 
 ### 3.2 Moduły I2C (PCF8574)
 Wykorzystano wbudowaną bibliotekę `Wire.h` do komunikacji w standardzie I2C. Zastosowanie dwóch ekspanderów pozwala na oszczędność pinów w Arduino. Ekspander pod adresem `0x20` steruje matrycą wskaźników LED, natomiast moduł `0x21` pracuje w trybie odczytu (`Wire.requestFrom`) i cyklicznie pobiera stany logiczne z podłączonych czujników ruchu.
